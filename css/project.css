@@ -84,7 +84,7 @@
   }
 
   #portfolio-project-1 .project-image .img {
-   background: url('../images/flixers.png') center center no-repeat;
+   background: url('https://i.postimg.cc/Y96KT3n7/flixers.png') center center no-repeat;
    background-size: cover;
    margin: 0 auto;
    /* max-width: 500px; */
@@ -177,7 +177,7 @@
   }
 
   #portfolio-project-2 .project-image .img {
-   background: url('../images/campgroundplaza.png') center center no-repeat;
+   background: url('https://i.postimg.cc/QCjGDTwT/campgroundplaza.png') center center no-repeat;
    background-size: cover;
    margin: 0 auto;
    /* max-width: 500px; */
@@ -271,11 +271,107 @@
   }
 
   #portfolio-project-3 .project-image .img {
-   background: url('../images/readyhomes.png') center center no-repeat;
+   background: url('https://i.postimg.cc/3N9MxwQb/readyhomes.png') center center no-repeat;
    background-size: cover;
    margin: 0 auto;
    /* max-width: 500px; */
    height: 400px;
    width: 100%;
+
+}
+
+
+
+/* MEDIA  */
+
+
+
+@media only screen and (max-width: 767px){
+
+    /* project 1 flixers */
+    #portfolio-project-1 h1 {
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+      
+    }
+
+    #portfolio-project-1 .tech h3 {
+       
+        font-size: 1.9rem;
+        text-align: center;
+    }
+    #portfolio-project-1 .tech .icons {
+        grid-template-columns: repeat(1, 100px);
+       justify-content: center;
+       align-items: center;
+       grid-gap: 10px 0;
+       
+    }
+
+    /* project 2 campgroundplaza */
+    #portfolio-project-2 h1 {
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+      
+    }
+
+    #portfolio-project-2 .tech h3 {
+       
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    #portfolio-project-2 .tech .icons {
+        grid-template-columns: repeat(1, 100px);
+       justify-content: center;
+       align-items: center;
+       grid-gap: 10px 0;
+       
+    }
+    /* project 3 ready homes */
+    #portfolio-project-3 h1 {
+        margin-bottom: 1.5rem;
+        font-size: 3rem;
+      
+    }
+
+    #portfolio-project-3 .tech h3 {
+       
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    #portfolio-project-3 .tech .icons {
+        grid-template-columns: repeat(1, 100px);
+       justify-content: center;
+       align-items: center;
+       grid-gap: 10px 0;
+       
+    }
+
+
+}
+
+
+@media only screen and (max-width: 320px){
+
+#portfolio-project-1 .info .buttons {
+    justify-content: space-between;
+    padding: 20px 0;
+   
+    display: flex;
+}
+
+#portfolio-project-2 .info .buttons {
+    justify-content: space-between;
+    padding: 20px 0;
+   
+    display: flex;
+}
+#portfolio-project-3 .info .buttons {
+    justify-content: space-between;
+    padding: 20px 0;
+   
+    display: flex;
+}
+
 
 }

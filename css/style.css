@@ -168,7 +168,7 @@ header .header-menu  a:hover {
 
 #top {
    
-    background: url(https://wallpaperaccess.com/full/492726.jpg) no-repeat center center;
+    background: url(https://i.postimg.cc/Kc5hN03r/nyc-background.jpg) no-repeat center center;
     background-size: cover;
     padding: 100px;
     height: 100vh;
@@ -398,19 +398,19 @@ header .header-menu  a:hover {
 
 
 #portfolio .portfolio-container .image1 {
-    background: url('../images/campgroundplaza.png') center center no-repeat;
+    background: url('https://i.postimg.cc/QCjGDTwT/campgroundplaza.png') center center no-repeat;
     background-size: cover; 
 } 
 
 #portfolio .portfolio-container .image2 {
-    background: url('../images/flixers.png') center center no-repeat;
+    background: url('https://i.postimg.cc/Y96KT3n7/flixers.png') center center no-repeat;
     background-size: cover; 
     
     
 } 
 
 #portfolio .portfolio-container .image3 {
-    background: url('../images/readyhomes.png') center center no-repeat;
+    background: url('https://i.postimg.cc/3N9MxwQb/readyhomes.png') center center no-repeat;
     background-size: cover; 
     
     
@@ -546,7 +546,7 @@ header .header-menu  a:hover {
 }
 
 #my-brand .brand-container .box-1 {
-    background: url('https://wallpapercave.com/wp/wp2212251.png') center center no-repeat;
+    background: url('https://i.postimg.cc/63JxHShz/youtube.png') center center no-repeat;
     background-size: cover;
     animation: down .9s ease-in-out  65 forwards;
     
@@ -554,13 +554,13 @@ header .header-menu  a:hover {
 
 
 #my-brand .brand-container .box-2 {
-    background: url('https://lh3.googleusercontent.com/S4ZSH3wGIczZQwKK_WEOOaRZFlXGY1bWf9oT4vBg_uq1O4JVXvgcUjENS7yTdj5GYYKx') center center no-repeat;
+    background: url('https://i.postimg.cc/tJdqtyQh/anchor.png') center center no-repeat;
     background-size: cover;
     animation: down .9s ease-in-out .1s 65 forwards;
    
 }
 #my-brand .brand-container .box-3{
-    background: url('https://lh3.googleusercontent.com/cWG9-bk2_zLdKsN9vsYEdbCReVfzgXU6FeHUmLI8a24FoZ05TpOLYXInCQ278FTwCw') center center no-repeat;
+    background: url('https://i.postimg.cc/hvR4dvwD/blogger.png') center center no-repeat;
     background-size: cover;
     animation: down .9s ease-in-out .2s 65 forwards;
     
