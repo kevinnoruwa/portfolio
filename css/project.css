@@ -438,6 +438,26 @@
        
     }
 
+        /* project 4 heroes emails */
+        #portfolio-project-4 h1 {
+            margin-bottom: 1.5rem;
+            font-size: 3rem;
+          
+        }
+    
+        #portfolio-project-4 .tech h3 {
+           
+            font-size: 1.8rem;
+            text-align: center;
+        }
+        #portfolio-project-4 .tech .icons {
+            grid-template-columns: repeat(1, 100px);
+           justify-content: center;
+           align-items: center;
+           grid-gap: 10px 0;
+           
+        }
+
 
 }
 
