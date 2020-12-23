@@ -363,7 +363,6 @@
   }
 
   #portfolio-project-4 .project-image .img {
-   /* background: url('https://i.postimg.cc/FKh6kwVv/hero-emails.png') center center no-repeat; */
    background: url('../images/hero-emails.png') center center no-repeat;
    background-size: cover;
    margin: 0 auto;
