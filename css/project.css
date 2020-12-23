@@ -280,6 +280,97 @@
 
 }
 
+/* ----portfolio-project-4- hero emails--------- */
+#portfolio-project-4 {
+    padding: 100px 15px;
+
+}
+
+#portfolio-project-4 h1 {
+    margin-bottom: 1.5rem;
+    font-style: italic;
+    font-size: 4rem;
+    font-weight: 600;
+    color: #16171b;
+
+
+}
+
+#portfolio-project-4 .info .buttons {
+    padding: 20px 0;
+    
+
+}
+
+#portfolio-project-4 .info .buttons a {
+    transition: all ease-in-out .2s;
+    text-transform: capitalize;
+    display: inline-block;
+    background: #16171b;
+    padding: 10px 20px;
+    border-radius: 3px;
+    color: white;
+}
+
+
+#portfolio-project-4 .info .buttons a:hover {
+    background: #919191;
+
+}
+
+#portfolio-project-4 p {
+    
+    color: #919191;
+    font-size: 1.2rem;
+    line-height: 1.7;
+    text-align: justify;
+  
+
+}
+
+
+#portfolio-project-4 .tech {
+
+}
+
+
+#portfolio-project-4 .tech h3 {
+
+    text-transform: uppercase;
+    margin: 2rem 0;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+#portfolio-project-4 .tech .icons {
+    grid-template-columns: repeat(4, 200px);
+    align-items: center;
+    justify-items: center;
+    grid-gap: 0 50px;
+    display: grid;
+}
+
+#portfolio-project-4 .tech .icons img {
+    width: 100%;
+    height: 100%;
+ 
+  }
+
+  #portfolio-project-4 .project-image {
+      width: 100%;
+      margin-bottom: 3rem;
+
+  }
+
+  #portfolio-project-4 .project-image .img {
+   background: url('https://i.postimg.cc/FKh6kwVv/hero-emails.png') center center no-repeat;
+   background-size: cover;
+   margin: 0 auto;
+   /* max-width: 500px; */
+   height: 400px;
+   width: 100%;
+
+}
 
 
 /* MEDIA  */

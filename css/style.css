@@ -416,6 +416,13 @@ header .header-menu  a:hover {
     
 } 
 
+#portfolio .portfolio-container .image4 {
+    background: url('https://i.postimg.cc/FKh6kwVv/hero-emails.png') center center no-repeat;
+    background-size: cover; 
+    
+    
+} 
+
   
 
 /*==================== SKILLS SECTION ====================================*/
