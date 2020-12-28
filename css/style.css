@@ -423,6 +423,12 @@ header .header-menu  a:hover {
     
 } 
 
+#portfolio .portfolio-container .image5 {
+    background: url('../images/hotfeets.png') center center no-repeat;
+    background-size: cover; 
+    
+    
+} 
   
 
 /*==================== SKILLS SECTION ====================================*/
