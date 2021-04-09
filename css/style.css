@@ -169,10 +169,25 @@ header .header-menu  a:hover {
 #top {
    
     background: url(https://i.postimg.cc/Kc5hN03r/nyc-background.jpg) no-repeat center center;
+    position: relative;
     background-size: cover;
     padding: 100px;
     height: 100vh;
+    z-index: 0;
     
+
+}
+
+#top .top-filter {
+    background: black;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    opacity: 0.2;
+    z-index: 2;
+
 
 }
 
@@ -873,8 +888,10 @@ footer h6 {
     }
 
     #top {
+        
         padding: 40px;
         height: 50%;
+      
     }
 
     #top .info h1 {
