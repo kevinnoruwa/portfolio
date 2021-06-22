@@ -164,77 +164,58 @@ header .header-menu  a:hover {
 
 
 /* Intro section */
-
-
 #top {
-   
-    background: url(https://i.postimg.cc/Kc5hN03r/nyc-background.jpg) no-repeat center center;
     position: relative;
-    background-size: cover;
-    padding: 100px;
     height: 100vh;
-    z-index: 0;
-    
+    width: 100%;
+    overflow: hidden;
 
 }
 
-#top .top-filter {
-    background: black;
+#top .bg-video {
+    transform: scale(1.5);
     position: absolute;
+    width: 100%;
+    height: 100%; 
+    top: 0;  
+}
+
+#top .overlay-filter {
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    width: 100%;
+    height:100%;
     top: 0;
-    bottom: 0;
-    right: 0;
     left: 0;
-    opacity: 0.1;
-    z-index: 2;
-
-
+    right: 0;
 }
 
-#top .info {
-    justify-self: center;
+#top .heading {
     text-align: center;
-    position: relative;
-    top: -70px;
-}
-
-
-
-#top .info h1 {
-    text-transform: uppercase;
     position: absolute;
-    margin-bottom: 4rem;
-    position: relative;
-    font-size: 4.5rem;
-    font-weight: 600;
-    color: #fff;
-    top: 100px; 
-}
-
-
-#top .info p {
-    text-transform: capitalize;
-    font-weight: 300;
-    font-size: 1.2rem;
-    padding: 2.0rem 0; 
-    color: #fff;
-    opacity: .9;
-    padding: 60px 0;
-}
-
-
-#top .info a {
+    width: 100%;
+    height: 100%;
     text-transform: uppercase;
-    border-bottom: 1px solid #fff;
-    padding-bottom: 10px;
-    font-size: 1.8rem;
-    color:  #fff;;
-    font-weight: 400;
-    cursor: pointer;
+    transform: translate3d(0,230px,0);
+    line-height: 1.5;
+   
+     
+}
+
+#top .heading .name{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+
 }
 
 
+#top .heading a {
+   text-decoration: underline;
+   font-size: 2.5rem;
+   color: #fff;
 
+}
 
 
 /* ----------------------------SERVICES SECTION-------------------------------------- */
@@ -887,26 +868,15 @@ footer h6 {
    
     }
 
-    #top {
-        
-        padding: 40px;
-        height: 50%;
-      
+    #top .heading .name {
+        font-size: 3rem;
     }
 
-    #top .info h1 {
-      
-        font-size: 2.3rem;
+      #top .heading a {
+        font-size: 2rem;
     }
-    #top .info p {
 
-        font-size: 1rem;
-    }
-    #top .info a {
-        margin: 0 auto;
-        font-size: 1.3rem;    
-        
-    }
+
  
     #services .service-container {
         grid-template-columns: 100%;
