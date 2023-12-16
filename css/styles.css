@@ -1,0 +1,1128 @@
+@import "reset.css";
+
+/* ----------GLOBAL ------ */
+* {
+
+    box-sizing: border-box;
+    
+   
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #eee;
+    color: #16171b;
+   
+    
+}
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    
+ 
+
+}
+a {
+    text-decoration: none;
+}
+
+.group:after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+
+
+
+/* ---HEADER --- */
+
+header {
+   justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    display: flex;
+    
+}
+
+header .logo {
+   
+    text-transform: uppercase;
+    background: #919191;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: #fff;
+
+
+}
+header .header-menu {
+
+    
+    
+}
+
+
+
+header .header-menu  a {
+    transition: all .2s ease-in-out;
+    text-transform: uppercase;
+    color: #919191;
+    padding: 10px;
+    font-size: 1rem;
+  
+}
+
+header .menu-btn {
+
+    justify-content: center;
+    cursor: pointer;
+    align-items: center;
+    font-size: 2rem;
+    padding: 15px;
+    display: flex;
+    color: #919191;
+
+}
+
+header .menu-btn {
+
+    display: none;
+
+}
+
+
+ .mobil-menu {
+     position: relative;
+     text-align: center;
+    transform: translate3d(-100%, 0, 0);
+    cursor: pointer;
+    flex-direction: column;
+    background: white;
+    padding: 15px 15px 15px 0;
+    height: 100vh;
+    display: flex;
+    width: 100%;
+    z-index: 10;
+     transition: all ease-in-out .3s;
+    
+     
+   
+}
+
+.mobil-menu.active  {
+    
+    transform: translate3d(0, 0, 0);
+   
+}
+
+
+.mobil-menu {
+    transition: all .3s ease-in-out;
+    display: none;
+    
+}
+
+
+
+.close {
+    text-align: end;
+    color: #919191;
+}
+
+.close .fa  {
+
+    padding: 10px 50px 10px 10px;
+    transition: all .2s ease-in-out;
+   font-size: 1.8rem;
+
+}
+
+.close .fa:hover {
+    color: red;
+ }
+
+.mobil-menu a {
+    transition: all ease-in-out .3s;
+    color: #919191;
+    padding: 15px;
+    font-size: 1.8rem;
+ 
+}
+
+
+.mobil-menu a:hover {
+  
+    color: #fff;
+    background: #919191;
+     
+   
+}
+header .header-menu  a:hover {
+    color: #16171b;
+ 
+}
+.flex {
+    display: flex;
+    
+}
+
+
+
+/* Intro section */
+#top {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all ease .3s; 
+
+}
+
+.big-container {
+        transition: all ease-in-out .3s;
+        width: 100%;
+        height: 100%;
+     
+        
+       
+        
+}
+
+.big-container.active{
+   
+    transform: translate3d(0px, 50px, 0px);
+}
+
+
+
+#top.active{
+    
+       transform: translate3d(0, 600px,0px);
+  
+
+}
+
+
+
+
+#top .videobg{
+   position: relative;
+   z-index: -1;
+
+}
+
+#top .overlay-filter {
+    background: rgba(0,0,0,.5);
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+#top .poster-img{
+    position: absolute;
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: url('../images/city-thumb.jpg');
+    background-size: cover;
+    visibility: hidden ;
+    transition: all .3s ease-in-out;
+    opacity: 0;
+
+}
+
+#top .heading {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    text-transform: uppercase;
+    transform: translate3d(0,230px,0);
+    line-height: 1.5;
+    z-index: 10;
+   
+     
+}
+
+#top .heading .name{
+    color: #fff;
+    font-size: 4rem;
+    font-weight: 600;
+
+}
+
+
+#top .heading a {
+   text-decoration: underline;
+   font-size: 2.5rem;
+   color: #fff;
+
+}
+
+
+/* ----------------------------SERVICES SECTION-------------------------------------- */
+
+
+
+#services {
+
+    padding: 80px 15px;
+}
+
+
+
+#services .title .circle {
+    background: #919191;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    opacity: .2;
+   
+}
+
+
+
+#services .title .circle h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-weight: 600;
+    color: #fff;
+    margin:0 auto;
+    padding:0;
+    left: 14%;
+    top: 42%;
+  
+   
+   
+}
+
+
+
+#services .service-container  {
+    grid-template-columns: 300px 300px 300px;
+    justify-content: center;
+    padding: 50px 0;
+    grid-gap: 3.5%;
+    display: grid;
+  
+
+    
+}
+
+#services .service-container .box {
+    transition: all .2s ease-in-out;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 0px  30px 0px;
+    background: #fff;
+  
+    height: 340px;
+   
+
+}
+#services .service-container .box .hr {
+
+   border-top: 1px solid rgba(0, 0, 0, 0.2);
+   
+  
+
+}
+
+#services .service-container .box:hover {
+    -webkit-box-shadow: 0px 13px 23px 21px rgba(0,0,0,0.11);
+    -moz-box-shadow: 0px 13px 23px 21px rgba(0,0,0,0.11);
+    box-shadow: 0px 13px 23px 21px rgba(0,0,0,0.11);
+}
+
+
+
+
+
+
+#services .service-container .box h5 {
+    text-transform: uppercase;
+    padding: 30px 0 14px; 
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+#services .service-container .box .box-img {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+   
+}
+#services .service-container .box .box-img img{
+    object-position: center;
+    object-fit: cover;
+    max-width: 232px;
+    width: 232px;
+    margin: 14px 0 0;
+}
+
+#services .service-container .box p {
+    text-align: center;
+   line-height: 1.7;
+   color: #919191;
+   padding: 16px 0;
+    
+ }
+
+
+
+
+/*================PORTFOLIO=================================================*/
+#portfolio {
+    padding: 120px 15px 120px;
+   
+}
+
+#portfolio .title .sqauare {
+    background: #919191;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    opacity: .2;
+   
+}
+
+#portfolio .title .sqauare h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-weight: 600;
+    color: #fff;
+    margin:0 auto;
+    padding:0;
+    left: 8%;
+    top: 43%;
+  
+}
+
+#portfolio .portfolio-container {
+    grid-template-columns: 380px 380px  380px;
+    grid-template-rows: 250px;
+    justify-content: center;
+    padding: 100px 0 ;
+    display: grid;
+    grid-gap: 1.5%;
+    position: relative;
+
+
+} 
+
+#portfolio .portfolio-container .box {
+    transition: all .2s ease-in-out; 
+    background: #fff;
+    cursor: pointer;
+    display: block;
+    padding: 40px;
+    width: 100%;
+    
+} 
+
+
+
+#portfolio .portfolio-container .box:hover {
+
+    -webkit-box-shadow: 0px 13px 23px 21px rgba(0,0,0,0.11);
+    -moz-box-shadow: 0px 13px 23px 21px rgba(0,0,0,0.11);
+    box-shadow: 0px 13px 23px 21px rgba(0,0,0,0.11);
+
+   
+
+    
+} 
+
+
+#portfolio .portfolio-container .image1 {
+    background: url('../images/flixstre.png') center center no-repeat;
+    background-size: cover; 
+} 
+
+#portfolio .portfolio-container .image2 {
+    background: #fff center center no-repeat;
+    background-size: cover; 
+    
+    
+} 
+
+#portfolio .portfolio-container .image3 {
+    background: #fff center center no-repeat;
+    background-size: cover; 
+    
+    
+} 
+
+
+
+/*==================== SKILLS SECTION ====================================*/
+
+#skills{
+    padding: 80px 15px;
+    background: #fff;
+}
+
+#skills  .large-title {
+    text-align: center;
+   
+  
+}
+
+#skills  h2 {
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #16171b;
+    margin-bottom: 19px;
+   
+}
+#skills  .line {
+    border-bottom: 2px solid #16171b;
+    display: block;
+    padding: 2px;
+    opacity: .2;
+   
+}
+
+#skills  .skills-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    
+    text-align: center;
+   
+    grid-gap: 100px 0;
+    justify-items: center;
+    padding: 100px 0;
+    display: grid;
+  
+
+}
+
+#skills  .skills-container .box img {
+
+    transition: all .5s ease;
+  
+   
+}
+
+#skills  .skills-container .box img:hover {
+
+    transform:translate3d(0,-15px,0)
+    
+}
+
+
+#skills  .skills-container .box img {
+
+    max-width: 200px;
+    width:  100%;
+  
+}
+
+
+
+
+
+
+/* ------ my brand section------------ */
+
+#my-brand {
+    padding: 80px 15px;
+}
+
+
+
+#my-brand .title .circle {
+    background: #919191;
+    border-radius: 50%;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    opacity: .2;
+   
+}
+
+
+
+#my-brand .title .circle h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-weight: 600;
+    color: #fff;
+    margin:0 auto;
+    padding:0;
+    left: 10%;
+    top: 42%;
+  
+   
+   
+}
+
+
+#my-brand .brand-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 50px 0;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 3.5%;  
+}
+
+#my-brand .brand-container .box {
+    transition: all .2s ease-in-out;
+    background: rgba(255,255,255, 1);
+    height: 400px; 
+}
+
+#my-brand .brand-container .box:hover {
+    -webkit-box-shadow: 0px 13px 23px 21px rgba(0,0,0,0.11);
+    -moz-box-shadow: 0px 13px 23px 21px rgba(0,0,0,0.11);
+    box-shadow: 0px 13px 23px 21px rgba(0,0,0,0.11);
+    opacity: .6;
+ 
+}
+
+#my-brand .brand-container .box-1 {
+    background: url('../images/youtube-app.png') center center no-repeat;
+    background-size: cover;
+    animation: down .9s ease-in-out  65 forwards;
+    
+}
+
+
+#my-brand .brand-container .box-2 {
+    background: url('../images/spotify-app.png') center center no-repeat;
+    background-size: cover;
+    animation: down .9s ease-in-out .1s 65 forwards;
+   
+}
+#my-brand .brand-container .box-3{
+    background: url('../images/bloggerwp.png') center center no-repeat;
+    background-size: cover;
+    animation: down .9s ease-in-out .2s 65 forwards;
+    
+}
+
+
+
+/* @keyframes down {
+    0%{ 
+        transform: translate3d(0,0,0)
+    }
+
+    50% {
+        transform: translate3d(0, 70px, 0)
+    }
+
+    100% {
+        transform: translate3d(0, 0, 0)
+
+    }
+} */
+
+/* ----- ABOUT ME ---- */
+
+#about-me {
+    padding: 80px 15px;
+
+}
+
+
+
+#about-me .title .sqauare {
+    background: #919191;
+    position: relative;
+    text-align: center;
+    margin: 0 auto;
+    height: 150px;
+    width: 150px;
+    opacity: .2;
+   
+}
+
+
+
+#about-me .title .sqauare h2 {
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    position: absolute;
+    font-size: 1.5rem;
+    font-weight: 400;
+    font-weight: 600;
+    color: #fff;
+    margin:0 auto;
+    padding:0;
+    left: 10%;
+    top: 42%;
+   
+   
+}
+
+#about-me .about-container {
+    padding: 50px 0;
+    margin: 0 auto;
+}
+
+
+#about-me .about-container .about-bg{
+
+    -webkit-box-shadow: 0px 13px 23px 21px rgba(0,0,0,0.11);
+    -moz-box-shadow: 0px 13px 23px 21px rgba(0,0,0,0.11);
+    box-shadow: 0px 13px 23px 21px rgba(0,0,0,0.11);
+    background: #fff;
+    padding: 40px;
+    height: 650px;
+    width: 600px;
+    margin: 0 auto;
+  
+}
+
+
+#about-me .about-container .about-bg .image img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+
+#about-me .about-container .about-bg .image {
+    display: inline-block;
+    position: relative;
+    padding-right: 15px;
+   float: left;
+   
+}
+
+#about-me .about-container .about-bg .image .img { 
+   
+ }
+ 
+
+
+#about-me .about-container .about-bg .image .img:hover {
+    transition: all ease-in-out .2s ;
+    opacity: 0;
+  
+}
+
+#about-me .about-container .about-bg .image .logo-container {
+    position: absolute;
+    top:  0px;
+    
+}
+    
+
+#about-me .about-container .about-bg .image .logo-container .logo-img {
+    transition: all ease-in-out .8s;
+    position: absolute;
+    opacity: 0;
+}
+
+#about-me .about-container .about-bg .image .logo-container .logo-img:hover {
+    
+   opacity: 1;
+}
+    
+   
+
+
+#about-me .about-container .about-bg .info {
+    display: inline-block;
+    line-height: 1.5;
+    float: left;
+  
+}
+
+#about-me .about-container .about-bg .info h5 {
+    letter-spacing: 1px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+#about-me .about-container .about-bg .info p {
+  color: #919191;
+  
+}
+
+
+#about-me .about-container .about-bg .main-info {
+ margin-top: 89px;
+
+}
+
+#about-me .about-container .about-bg .main-info p {
+    text-align: justify;
+    line-height: 1.8;
+    color: #919191;
+   
+}
+
+
+#about-me .about-container .about-bg .main-info .cursive {
+    position: relative;
+    font-style: italic;
+    display: block;
+    text-align: right;
+     bottom: 0px;   
+}
+
+/* -----FOOTER----- */
+
+footer {
+    padding: 100px 15px;
+    background: white;
+
+}
+
+footer .social-container {
+    grid-template-columns: 1fr 1fr 1fr ;
+    justify-items: center;
+    align-items: center;
+    display: grid;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+footer .social-container a {
+    display: inline-block;
+    font-size: 3rem;
+    color: #16171b;
+    padding: 10px;
+
+}
+
+footer h5 {
+    text-transform: uppercase;
+    font-size: 1rem;
+    color: #16171b;
+    text-align: center;
+    padding: 20px 0 0;
+
+}
+
+footer h6 {
+    text-transform: capitalize;
+    text-align: center;
+    font-size: .8rem;
+    color: #16171b;
+    padding: 20px 0 0;
+
+}
+
+
+/* ----------media------- */
+@media screen and (max-width: 1200px) {
+    #portfolio .portfolio-container {
+        grid-template-columns: 310px 310px 310px;
+
+    }
+
+
+}
+@media screen and (max-width: 968px) and (min-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    header .menu-btn {
+
+        display: none;
+    
+    }
+    #services .service-container {
+        grid-template-columns: 50% 50%;
+        padding: 60px 0;
+        
+    
+    }
+
+    #portfolio .portfolio-container {
+        padding: 60px 0;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 250px 250px 250px 250px ;
+    
+    }
+    #services .service-container .box-3 {
+       /* grid-column: 1/3; */
+    }
+    
+    #portfolio .portfolio-container .image7{
+        grid-column: 1/3;
+        
+    }
+
+    #skills .skills-container {
+        grid-template-columns: 1fr 1fr;
+        /* grid-gap: 20px; */
+        justify-items: center;
+        align-items: center;
+        padding: 60px 0;
+        display: grid;
+    }
+
+    #skills .skills-container .box img {
+     
+        width: 170px;
+       
+        
+    }
+
+   
+    #my-brand .brand-container {
+        grid-template-columns: 1fr 1fr;
+        padding: 60px 0 0;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 3.5%;
+    }
+    
+    #my-brand .brand-container .box {
+        animation: none;
+        
+       
+       }
+    #my-brand .brand-container .box-3{
+     grid-column: 1/3 ;
+    }
+
+
+}
+
+/* ----------------------------- */
+
+@media screen and (max-width: 767px){
+    .about-link {
+        display: none;
+    }
+
+    .header-menu{
+        display: none;
+    }
+
+    header .menu-btn {
+
+        display: flex;
+    
+    }
+
+    .mobil-menu {
+        display: hidden;
+   
+    }
+    #top .videobg{
+        display: none;
+    }
+
+    #top .poster-img{
+        opacity: 1;
+        visibility: visible ;
+        background: url('../images/city-thumb.jpg');
+        background-size: cover;
+    }
+
+    #top .heading .name {
+        font-size: 3rem;
+    }
+
+      #top .heading a {
+        font-size: 2rem;
+    }
+
+
+ 
+    #services .service-container {
+        grid-template-columns: 100%;
+        padding: 60px 0;
+        
+    
+    }
+    #services .title .circle  {
+        height: 110px;
+        width: 110px;
+
+    }
+    #services .title .circle h2 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        position: absolute;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-weight: 600;
+        color: #fff;
+        margin: 0 auto;
+        padding: 0;
+        left: 10%;
+        top: 42%;
+    }
+    #services .service-container .box .box-img img {
+        /* position: relative;
+        left: 20px; */
+        
+    }
+
+    #portfolio {
+        margin-bottom: 50px;
+    }
+
+    #portfolio .title .sqauare {
+        background: #919191;
+        position: relative;
+        text-align: center;
+        margin: 0 auto;
+        height: 110px;
+        width: 110px;
+        opacity: .2;
+    }
+
+    #portfolio .title .sqauare h2 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        position: absolute;
+        font-size: 1.2rem;
+        font-weight: 400;
+        font-weight: 600;
+        color: #fff;
+        margin: 0 auto;
+        padding: 0;
+        left: 4%;
+        top: 43%;
+    }
+    #portfolio .portfolio-container {
+        padding: 60px 0;
+        grid-template-columns: 100%;
+        grid-template-rows: 250px 250px 250px
+    
+    }
+
+    #skills h2 {
+        letter-spacing: 2px;
+        font-size: 2rem;
+        font-weight: 600;
+        color: #16171b;
+        margin-bottom: 19px;
+    }
+
+    #skills .skills-container {
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        /* padding: 60px 0;
+        grid-gap: 15px; */
+        display: grid;
+    }
+
+    #skills .skills-container .box img {
+        width: 150px;
+        
+       
+        
+    }
+
+    
+ 
+
+    #my-brand {
+        padding: 80px 15px 0px;
+        
+    }
+
+    #my-brand .title .circle {
+        height: 110px;
+        width: 110px;
+        
+    }
+    
+    #my-brand .title .circle h2 {
+        font-size: 1.2rem;
+        left: 7%;
+
+    }
+    #my-brand .brand-container {
+        grid-template-columns: 100%;
+        padding: 60px 0 0;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 3.5%;
+    }
+
+    #my-brand .brand-container .box {
+        margin: 0 auto;
+        width: 100%;
+       max-width: 250px;
+        animation: none
+    }
+    #about-me .sqauare {
+       
+        display: none;
+    }
+        
+
+    #about-me .about-container .about-bg {
+       display: none;
+        box-shadow: rgba(0, 0, 0, 0.11) 0px 13px 23px 21px;
+        height: auto;
+        width: 100%;
+        max-width: 290px;
+        background: rgb(255, 255, 255);
+        padding: 40px;
+        margin: 0px auto;
+    }
+   
+ 
+}
+
+
+
+@media(min-aspect-ratio: 16/9){
+    #top .videobg{
+        width: 100%;
+        height:auto;
+
+    }
+  
+}
+
+
+@media(max-aspect-ratio: 16/9){
+    #top .videobg{
+        width: auto;
+        height:100%;
+
+    }
+
+ 
+}
+
+@media screen and (max-width: 500px){
+
+    #skills .skills-container .box img {
+        max-width: 120px;
+        
+       
+        
+    }
+
+}
