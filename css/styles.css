@@ -670,6 +670,7 @@ header .header-menu  a:hover {
     width: 150px;
     opacity: .2;
    
+   
 }
 
 
@@ -691,8 +692,10 @@ header .header-menu  a:hover {
 }
 
 #about-me .about-container {
-    padding: 50px 0;
+    padding: 50px 0 70px;
     margin: 0 auto;
+    position: relative;
+    top: 30px;
 }
 
 
