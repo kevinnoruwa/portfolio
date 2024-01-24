@@ -1148,3 +1148,36 @@ footer h6 {
     }
 
 }
+
+@media screen and (max-width: 450px ) {
+    #top .heading .name {
+        font-size: 2.7rem;
+    }
+
+    #top .heading a {
+        font-size: 1.9rem;
+    }
+}
+
+
+@media screen and (max-width: 300px ) {
+    #top .heading .name {
+        font-size: 2rem;
+    }
+
+    #top .heading a {
+        font-size: 1.5rem;
+    }
+
+    #services .service-container .box p {
+        text-align: center;
+        line-height: 1.5;
+        color: #919191;
+        padding: 16px 0;
+    }
+
+    #skills .skills-container .box img {
+        max-width: 90px;
+    }
+    
+}
